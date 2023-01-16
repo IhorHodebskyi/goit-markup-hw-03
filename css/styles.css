@@ -62,10 +62,11 @@ img {
     padding-right: 15px;
     margin-left: auto;
     margin-right: auto;
-    }
+}
 
 .header {
-
+padding-top: 24px;
+padding-bottom: 24px;
 }
 
 .header-navigation {
@@ -74,6 +75,7 @@ display: flex;
 
 .header-cont{
     display: flex;
+    align-items: center;
 }
 
 .header-logo {
@@ -85,9 +87,8 @@ font-family: 'Raleway', sans-serif;
     text-transform: uppercase;
     color: var(--header-logo);
     text-decoration: none;
-    display: block;
-    margin-top: 24px;
-    margin-bottom: 24px;
+    display: flex;
+    align-items: center;
     margin-right: 76px;
     }
 
@@ -101,12 +102,13 @@ font-family: 'Raleway', sans-serif;
 .header-list {
     display: flex;
     gap: 40px;
+    align-items: center;
 
 } 
 
-.header-item {
+/* .header-item {
 
-}
+} */
 
 
 
@@ -117,12 +119,11 @@ font-family: 'Raleway', sans-serif;
     letter-spacing: 0.02em;
     color: var(--color-link);
     display: block;
-    margin-top: 24px;
-    margin-bottom: 24px;
 }
 
 .header-link:hover, .header-link:focus
 {color: var(--color-link-hover) }
+
 
 
 .header-mail {
@@ -132,15 +133,12 @@ font-family: 'Raleway', sans-serif;
         letter-spacing: 0.02em;
         color: var(--color-link);
         display: block;
-        margin-top: 24px;
-        margin-bottom: 24px;
 
-;
 }
-.header-mail:hover, .header-mail:focus,
+/* .header-mail:hover, .header-mail:focus,
 .header-tel:hover,
 .header-tel:focus
-{color: var(--color-btn-hero)}
+{color: var(--color-btn-hero)} */
 
 .header-tel {
     font-weight: 400;
@@ -149,8 +147,7 @@ font-family: 'Raleway', sans-serif;
         letter-spacing: 0.02em;
         color: var(--color-link);
         display: block;
-        margin-top: 24px;
-        margin-bottom: 24px;
+        font-style: normal;
 }
 
 /* main */
@@ -158,21 +155,18 @@ font-family: 'Raleway', sans-serif;
 /* hero */
 .hero {
     background-color: var(--background-dark);
-    height: 600px;
+    padding: 188px 0;
 
 }
 
-.hero-titel-cont{
-    text-align: center;
-    margin-top: 188px;
-}
+
 .hero-titel {
         font-size: 56px;
         line-height: 1.2;
         text-align: center;
         letter-spacing: 0.02em;
         color: var(--background-light);
-        padding-top: 188px;
+        margin-bottom: 48px;
 }
 
 .but-cont{
@@ -191,6 +185,8 @@ font-family: 'Raleway', sans-serif;
         background-color: var(--color-btn-hero);
         cursor: pointer;
         padding: 16px 32px;
+        display: block;
+        margin: 0 auto;
 
 }
 
@@ -214,13 +210,18 @@ font-family: 'Raleway', sans-serif;
     overflow: hidden;
 }
 
-/* .aside {
-} */
+.aside {
+    padding: 120px 0;
+}
 .aside-cont {
     margin: 0 auto;
+    
 }
 
 .aside-item{
+
+    width: calc((100% - (24px * 3)) / 4);
+    
 }
 
 /* .aside-titel {
@@ -229,6 +230,7 @@ font-family: 'Raleway', sans-serif;
 
 .aside-list {
     display: flex;
+    align-items: center;
     gap: 24px;
 } 
 
@@ -244,17 +246,16 @@ font-family: 'Raleway', sans-serif;
 /* .aside-item {
 } */
 
-.aside-subtitel {
-    padding-top: 120px;
-    padding-bottom: 8px;
-} 
-.aside-text {
-    padding-bottom: 120px;
-}
+/* .aside-subtitel {
+
+}  */
+/* .aside-text {
+
+} */
 
 /* What are we doing */
 
-/* .section-work {} */
+.section-work {padding-bottom: 120px;}
 
 .section-work-list {
 display: flex;
@@ -270,17 +271,17 @@ gap: 24px;
         letter-spacing: 0.02em;
         text-transform: capitalize;
         color: var(--color-titel);
-        padding-bottom: 72px;
+        margin-bottom: 72px;
 }
 
-.section-work-img {
-    padding-bottom: 120px;
-}
+/* .section-work-img {
+} */
 
 /* Our Team */
 
-.team {
+.section-team {
     background-color: var(--section-team);
+    padding: 120px 0;
 }
 
 .section-team-titel {
@@ -290,7 +291,6 @@ gap: 24px;
         letter-spacing: 0.02em;
         text-transform: capitalize;
         color: var(--color-titel);
-        margin-top: 120px;
         margin-bottom: 72px;
 }
 .section-team-list {
@@ -301,28 +301,35 @@ gap: 24px;
 .section-team-item {
     width: 264px;
         height: 380px;
-        border: 1px solid #E7E9FC;
-padding-bottom: 32px;
+        background-color: var(--background-light);
+        box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
+border-radius: 0px 0px 4px 4px;
+
+
 }
 
 .section-team-img {
-    padding-bottom: 32px;
+    margin-bottom: 32px;
+
 }
 
 .section-team-subtitel {
     text-align: center;
-    padding-bottom: 8px;
+
 }
 
 .section-team-text {
     text-align: center;
-    padding-bottom: 32px;
+    margin-top: 8px;
+    margin-bottom: 32px;
+
 }
 
 /* footer */
 
-.footer-cont {
+.footer {
         background-color: var(--background-dark);
+        padding: 100px 0;
 }
 
 .footer-logo {
@@ -335,8 +342,7 @@ font-family: 'Raleway', sans-serif;
     color: var(--footer-logo);
     text-decoration: none;
     display: block;
-    padding-top: 100px;
-    padding-bottom: 8px;
+
 
 }
 
@@ -349,23 +355,22 @@ font-family: 'Raleway', sans-serif;
     line-height: 1.5;
     letter-spacing: 0.02em;
     color: var(--footer-text);
-    padding-bottom: 100px;
     Width: 264px;
-    Height: 72px;
 }
 
 /* filters */
 
-/* .section-filters {
-} */
+.section-filters {
+    padding: 96px 0 100px 0;
+}
 /* .section-filters-titel {
 } */
-
 
 .section-filters-list {
 display: flex;
     justify-content: center;
     gap: 24px;
+    margin-bottom: 72px;
 }
 /* .section-filters-item {
 } */
@@ -378,8 +383,7 @@ display: flex;
         color: var(--section-filters-button);
         cursor: pointer;
         padding: 12px 24px;
-        margin-top: 96px;
-        margin-bottom: 72px;
+
 }
 .section-filters-button:hover, .section-filters-button:focus{
     color: var(--background-light);
@@ -398,7 +402,6 @@ display: flex;
     display: flex;
     flex-wrap: wrap;
     box-sizing: border-box;
-        border: 1px solid #E7E9FC;
         gap: 24px;
 }
 
@@ -409,13 +412,12 @@ display: flex;
 }
 
 .section-portfolio-img {
-    padding-bottom: 32px;
+    margin-bottom: 32px;
 }
 
 .section-portfolio-subtitel {
-    padding-bottom: 8px;
+    margin-bottom: 8px;
 }
 
 .section-portfolio-text {
-    padding-bottom: 32px;
 }
