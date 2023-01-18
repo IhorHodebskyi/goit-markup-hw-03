@@ -137,12 +137,12 @@ font-family: 'Raleway', sans-serif;
         letter-spacing: 0.02em;
         color: var(--color-link);
         display: block;
-
+        font-style: normal;
 }
-/* .header-mail:hover, .header-mail:focus,
+.header-mail:hover, .header-mail:focus,
 .header-tel:hover,
 .header-tel:focus
-{color: var(--color-btn-hero)} */
+{color: var(--color-btn-hero)}
 
 .header-tel {
     font-weight: 400;
@@ -191,6 +191,9 @@ font-family: 'Raleway', sans-serif;
         padding: 16px 32px;
         display: block;
         margin: 0 auto;
+        border: none;
+        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+            border-radius: 4px;
 
 }
 
@@ -250,6 +253,8 @@ font-family: 'Raleway', sans-serif;
 }
 
 .aside-item {
+
+    flex-basis: calc((100% - 24px * 3) / 4);
     /* flex-basis: 264px; */
 }
 
@@ -326,7 +331,7 @@ gap: 24px;
 }
 
 .section-team-subtitel {
-
+margin-bottom: 8px;
 
 }
 
@@ -401,7 +406,12 @@ display: flex;
     color: var(--background-light);
     background: var(--color-brn-hover);
     box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 2px 1px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
+    border-radius: 4px;
+    border-color: var(--color-brn-hover);
 }
+
+
+border-radius: 4px;
 /* ------portfolio------ */
 
 /* .section-portfolio {} */
@@ -422,7 +432,7 @@ display: flex;
     display: flex;
     flex-wrap: wrap;
     box-sizing: border-box;
-    flex-basis: calc((100% - 24px * 6) / 9);
+    
     column-gap: 24px;
     row-gap: 48px;
     justify-content: space-between;
@@ -430,6 +440,7 @@ display: flex;
 }
 
 .section-portfolio-item {
+    flex-basis: calc((100% - 24px * 2) / 3);
 
 }
 
@@ -438,6 +449,7 @@ display: flex;
 }
 
 .section-portfolio-subtitel {
+    margin-bottom: 8px;
 
 }
 
